@@ -24,13 +24,16 @@
 <form method="post">
     <fieldset>
         <legend>Details</legend>
-        Name: <input type="text" name="name" value="<?php echo $name; ?>">
+        Name:
+        <input type="text" name="name" value="<?php echo $name; ?>">
         <span class="error">* <?php echo $nameErr; ?></span>
         <br><br>
-        E-mail: <input type="text" name="email" value="<?php echo $email; ?>">
+        E-mail:
+        <input type="text" name="email" value="<?php echo $email; ?>">
         <span class="error">* <?php echo $emailErr; ?></span>
         <br><br>
-        Phone: <input type="text" name="phone" value="<?php echo $phone; ?>">
+        Phone:
+        <input type="text" name="phone" value="<?php echo $phone; ?>">
         <span class="error">*<?php echo $phoneErr; ?></span>
         <br><br>
         <input type="submit" name="submit" value="Register">

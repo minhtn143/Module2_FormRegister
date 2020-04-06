@@ -1,8 +1,7 @@
 <?php
 function loadRegistrations($filename){
-    $jsondata = file_get_contents($filename);
-    $arr_data = json_decode($jsondata, true);
-    return $arr_data;
+    $jsonData = file_get_contents($filename);
+    return json_decode($jsonData, true);
 }
 
 function saveDataJSON($filename, $name, $email, $phone)
@@ -21,9 +20,9 @@ function saveDataJSON($filename, $name, $email, $phone)
         $jsondata = json_encode($arr_data, JSON_PRETTY_PRINT);
         //write json data into data.json file
         file_put_contents($filename, $jsondata);
-        echo "Lưu dữ liệu thành công!";
+        echo "Saved!";
     } catch (Exception $e) {
-        echo 'Lỗi: ', $e->getMessage(), "\n";
+        echo 'Error!: ', $e->getMessage(), "\n";
     }
 }
 
